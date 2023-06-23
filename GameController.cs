@@ -7,6 +7,7 @@ class Program
     static void Main()
     {
         string filePath = Path.Combine(Directory.GetCurrentDirectory(), "resources", "words.txt");
+        Console.WriteLine(filePath);
         List<string> words = ReadFile(filePath);
 
     }
