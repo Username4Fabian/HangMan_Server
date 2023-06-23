@@ -6,12 +6,13 @@ class Program
 {
     static void Main()
     {
-        string filePath = "./resources/words.txt";
+        string filePath = Path.Combine(Directory.GetCurrentDirectory(), "resources", "words.txt");
+        Console.WriteLine(filePath);
         List<string> words = ReadFile(filePath);
 
         foreach (string word in words)
         {
-            Console.WriteLine(word);
+            //Console.WriteLine(word);
         }
         Console.WriteLine(words.Count);
     }
