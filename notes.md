@@ -1,3 +1,17 @@
+
+Website = Chatroom-stlye 
+    UserXYZ: a 
+Es soll ein Wort aus der Liste ausgewählt werden, dann wird ein buchstabe eingegeben. 
+Logik in Unterstrichen wie viele Buchstaben das Wort hat darunter Zeichnung für hangman. 
+in serverlogik als Zahl mit counter 
+je höher der Counter desto weiter ist das Bild fortgeschritten
+Jedesmal wenn sich der counter erhöht wird der das Bild geupdatet. 
+Standard Database: MySQL 
+Fancy Realtimedatabase: Firebase 
+Hybrid: Apache Kafka
+
+
+
 ### Server/GameController.cs
 
 This is where you'll implement your game logic. You could start by defining a class for a Hangman game:
