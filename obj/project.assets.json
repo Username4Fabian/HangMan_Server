@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\domsc\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\domsc\\RiderProjects\\HangMan_Server\\HangMan_Server.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\Schule\\Pos4\\HangMan_Server\\HangMan_Server.csproj",
       "projectName": "HangMan_Server",
-      "projectPath": "C:\\Users\\domsc\\RiderProjects\\HangMan_Server\\HangMan_Server.csproj",
-      "packagesPath": "C:\\Users\\domsc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\domsc\\RiderProjects\\HangMan_Server\\obj\\",
+      "projectPath": "C:\\Users\\user\\Desktop\\Schule\\Pos4\\HangMan_Server\\HangMan_Server.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\Schule\\Pos4\\HangMan_Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\domsc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\domsc\\.dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
