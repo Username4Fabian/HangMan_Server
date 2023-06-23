@@ -12,7 +12,7 @@ class Program
 
         foreach (string word in words)
         {
-            //Console.WriteLine(word);
+            //Test
         }
         Console.WriteLine(words.Count);
     }
