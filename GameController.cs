@@ -6,20 +6,21 @@ class Program
 {
     static void Main()
     {
+
         string filePath = "./resources/words.txt";
         List<string> words = ReadFile(filePath);
-
-        foreach (string word in words)
-        {
-            Console.WriteLine(word);
-        }
-        Console.WriteLine(words.Count);
+        
+        
+        
+        
     }
 
-  public static List<string> ReadFile(string path)
+    public static List<string> ReadFile(string path)
     {
         List<string> words = new List<string>();
 
+        
+        
         try
         {
             // Open the file for reading
@@ -40,5 +41,7 @@ class Program
         }
 
         return words;
+         
     }
+   
 }
