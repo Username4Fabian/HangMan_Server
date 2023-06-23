@@ -1,0 +1,5 @@
+/Users/fabiansykes/Documents/GitHub/HangMan_Server/obj/Debug/net7.0/HangMan_Server.csproj.AssemblyReference.cache
+/Users/fabiansykes/Documents/GitHub/HangMan_Server/obj/Debug/net7.0/HangMan_Server.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fabiansykes/Documents/GitHub/HangMan_Server/obj/Debug/net7.0/HangMan_Server.AssemblyInfoInputs.cache
+/Users/fabiansykes/Documents/GitHub/HangMan_Server/obj/Debug/net7.0/HangMan_Server.AssemblyInfo.cs
+/Users/fabiansykes/Documents/GitHub/HangMan_Server/obj/Debug/net7.0/HangMan_Server.csproj.CoreCompileInputs.cache
