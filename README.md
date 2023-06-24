@@ -55,4 +55,4 @@ The project follows a client-server architecture with a clear distinction betwee
 
 - OpenAI's ChatGPT for providing initial guidance on project architecture.
 
-Please note: these instructions are primarily for setting up a development environment. For deployment to a production environment, you might need to perform additional steps. These may include configuring a reverse proxy for the ASP.NET Core server, setting up a database for persistent game states, and implementing HTTPS protocols【5†source】.
+Please note: these instructions are primarily for setting up a development environment. For deployment to a production environment, you might need to perform additional steps. These may include configuring a reverse proxy for the ASP.NET Core server, setting up a database for persistent game states, and implementing HTTPS protocols.
