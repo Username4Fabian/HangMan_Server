@@ -5,8 +5,7 @@ using  Hangman_Server.Models;
 
 
 class Game{
-
-public static String Test(){
+    public static String Test(){
     RandomWordGenerator WordGenerator = new RandomWordGenerator();
     string word = WordGenerator.getWord();
     return word;
