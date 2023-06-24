@@ -1,62 +1,58 @@
 # HangMan_Server
-HangMan Game using a C# Server
 
-A multiplayer Hangman game where users can play the game through a website. The server is implemented in C# using ASP.NET Core, and the client is a simple web page using HTML, CSS, and JavaScript.
+HangMan_Server is a multiplayer Hangman game powered by a C# server using ASP.NET Core. The game's interface is a web page developed with HTML, CSS, and JavaScript. This design leverages modern web technologies for real-time multiplayer interaction while maintaining a separation of concerns between the server-side and client-side logic.
 
-## Getting Started
+## Project Setup
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+### Requirements
 
-### Prerequisites
+  * .NET Core SDK
+  * A modern web browser
+  * A text editor or integrated development environment (IDE)
 
-* [.NET Core SDK](https://dotnet.microsoft.com/download)
-* A modern web browser
-* A text editor or integrated development environment (IDE)
+### Installation and Execution
 
-### Installing
+To clone and run the project locally:
 
-1. Clone this repository
 ```bash
+# Clone the repository
 git clone https://github.com/yourusername/hangman.git
-```
 
-2. Go into the repository
-```bash
+# Navigate to the repository
 cd hangman
-```
 
-3. Restore .NET packages
-```bash
+# Restore .NET packages
 dotnet restore
-```
 
-### Running the Application
-
-1. Run the server
-```bash
+# Run the server
 dotnet run
 ```
 
-2. Open a web browser and navigate to `http://localhost:5000` (or `https://localhost:5001` if using HTTPS)
+After running the server, open a web browser and navigate to `http://localhost:5000` (or `https://localhost:5001` for HTTPS).
 
-## Project Structure
+## Project Architecture
 
-The server-side code is located in the `Server` directory and the client-side code is located in the `Client` directory.
+The project follows a client-server architecture with a clear distinction between the server-side and client-side code. The server-side code resides in the `Server` directory, and the client-side code is located in the `Client` directory.
 
-* `Server/GameController.cs` - This is where the game server logic is located. It uses an in-memory dictionary to store games.
-* `Server/GameHub.cs` - This is where the SignalR hub is defined. It allows real-time communication between the server and clients.
-* `Client/index.html` - This is the main webpage that players will interact with.
-* `Client/styles.css` - This file contains the styles for the webpage.
-* `Client/main.js` - This file contains the JavaScript that handles user interaction and communicates with the server.
+### Server
 
-## Built With
+- `Server/GameController.cs`: This component embodies the game server logic, handling game states with an in-memory dictionary.
+- `Server/GameHub.cs`: This component is the SignalR hub definition, facilitating real-time bi-directional communication between the server and clients.
 
-* [.NET Core](https://dotnet.microsoft.com/) - The server framework
-* [SignalR](https://dotnet.microsoft.com/apps/aspnet/signalr) - Used to provide real-time web functionality
-* [HTML/CSS/JavaScript](https://developer.mozilla.org/en-US/docs/Learn) - Used for the client-side interface
+### Client
+
+- `Client/index.html`: The main webpage that serves as the user interface for players.
+- `Client/styles.css`: The stylesheet defining the visual aesthetic of the webpage.
+- `Client/main.js`: The JavaScript file managing user interaction and server communication.
+
+## Technology Stack
+
+- .NET Core: The server-side framework providing a robust environment for back-end development.
+- SignalR: Middleware for real-time web functionality, handling the communication between the server and clients.
+- HTML/CSS/JavaScript: The trio responsible for crafting the client-side interface, with HTML for the structural foundation, CSS for the presentation layer, and JavaScript for dynamic functionality.
 
 ## Acknowledgments
 
-* OpenAI's ChatGPT for providing initial guidance on project architecture
+- OpenAI's ChatGPT for providing initial guidance on project architecture.
 
-Please note that these instructions do not cover how to deploy the application to a production environment. Depending on where and how you want to host the application, you may need to perform additional steps, such as setting up a reverse proxy for the ASP.NET Core server, setting up a database to store game states, and configuring HTTPS.
+Please note: these instructions are primarily for setting up a development environment. For deployment to a production environment, you might need to perform additional steps. These may include configuring a reverse proxy for the ASP.NET Core server, setting up a database for persistent game states, and implementing HTTPS protocols【5†source】.
