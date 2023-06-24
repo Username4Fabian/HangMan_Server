@@ -3,7 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using  Hangman_Server.Models;
 
-class RandomWordGenerator_temp
+class RandomWordGenerator
 {
     public static String Manager(){
         string path = Path.Combine(Directory.GetCurrentDirectory(), "resources", "words.txt");
