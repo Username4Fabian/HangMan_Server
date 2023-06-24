@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Hangman_Server.props" />
+</Project>
