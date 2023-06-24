@@ -7,8 +7,13 @@ class Program
     static void Main()
     {
         string filePath = Path.Combine(Directory.GetCurrentDirectory(), "resources", "words.txt");
-        Console.WriteLine(filePath);
         List<string> words = ReadFile(filePath);
+
+        Console.Write("Your random word is: ");
+        Console.WriteLine(GetRandomWord(words));
+
+
+
 
     }
 
@@ -37,4 +42,14 @@ class Program
 
         return words;
     }
+
+public static string GetRandomWord(List<string> words)
+{
+    Random random = new Random();
+    int index = random.Next(words.Count);
+    return words[index];
 }
+
+
+}
+
