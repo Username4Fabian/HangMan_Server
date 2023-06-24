@@ -1,6 +1,40 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Hangman_Server.Models;
+using Hangman_Server.Controllers;
+
+
+namespace Hangman_Server.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class NumberController : ControllerBase
+    {
+        // POST: api/Number
+        [HttpPost]
+        public ActionResult PostNumber([FromBody] int number)
+        {   
+            Console.WriteLine(number);
+            return Ok(new { number = number });
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 [HttpPost("create")]

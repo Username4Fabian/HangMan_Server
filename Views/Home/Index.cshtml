@@ -2,33 +2,54 @@
 
 <h1>Your random word is: @Game.Test()</h1>
 
-<!--
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
+<head>
+    <title>Number Sender</title>
+</head>
+<body>
+    <h1>Number Sender</h1>
 
-    <body>
-        <div id="chat" class="chat-box"></div>
-        <input type="text" id="guess" placeholder="Guess a letter" />
-        <button onclick="sendGuess()">Submit</button>
+    <input id="numberInput" type="number" placeholder="Enter a number">
+    <button id="sendButton">Send to server</button>
 
-        <script>
-            async function sendGuess() {
-                let guess = document.getElementById('guess').value;
-                let response = await fetch('http://localhost:5000/api/hangman', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ guess }),
-                });
-                let data = await response.json();
-                document.getElementById('chat').innerHTML += `<p>${data.message}</p>`;
-                document.getElementById('guess').value = '';
-            }
-        </script>
-    </body>
+    <p id="responseText"></p>
+    <img id="responseImage" src="" alt="Response image" style="display:none" width="500px"> <!-- The img tag where the image will be displayed -->
+    
+    <script>
+        const url = 'http://localhost:5259/api/number';
+        const sendButton = document.getElementById('sendButton');
+        const numberInput = document.getElementById('numberInput');
+        const responseText = document.getElementById('responseText');
+        const responseImage = document.getElementById('responseImage'); // Grabbing the img tag
+
+        sendButton.addEventListener('click', () => {
+            const numberToSend = parseInt(numberInput.value);
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(numberToSend)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                responseText.textContent = 'Response from server: ' + parseInt(data.number); //parseInt !!!!!!!!!!!!!!!!!!
+                responseImage.src = `http://localhost:5259/resources/images/${parseInt(data.number)}.png`; // Setting the image source based on server response
+                responseImage.style.display = 'block'; // Displaying the image
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                responseText.textContent = 'Error: ' + error;
+                responseImage.style.display = 'none'; // Hiding the image in case of an error
+            });
+        });
+    </script>
+</body>
 </html>
-
--->
