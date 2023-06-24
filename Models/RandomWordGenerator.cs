@@ -5,6 +5,13 @@ using  Hangman_Server.Models;
 
 class RandomWordGenerator
 {
+    private string word; 
+
+    public RandomWordGenerator()
+    {
+        this.word = Manager();
+    }
+
     public static String Manager(){
         string path = Path.Combine(Directory.GetCurrentDirectory(), "resources", "words.txt");
         List<string> words = ReadFile(path);
@@ -49,5 +56,11 @@ public static string GetRandomWord(List<string> words)
     int index = random.Next(words.Count);
     return words[index];
 }
+
+public string getWord(){
+    return this.word;
+
 }
+}
+
 
