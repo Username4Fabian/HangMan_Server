@@ -2,3 +2,33 @@
 
 <h1>Your random word is: @Game.Test()</h1>
 
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <body>
+        <div id="chat" class="chat-box"></div>
+        <input type="text" id="guess" placeholder="Guess a letter" />
+        <button onclick="sendGuess()">Submit</button>
+
+        <script>
+            async function sendGuess() {
+                let guess = document.getElementById('guess').value;
+                let response = await fetch('http://localhost:5000/api/hangman', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ guess }),
+                });
+                let data = await response.json();
+                document.getElementById('chat').innerHTML += `<p>${data.message}</p>`;
+                document.getElementById('guess').value = '';
+            }
+        </script>
+    </body>
+</html>
+
+-->
